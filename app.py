@@ -4,8 +4,7 @@ import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-MODEL_PATH = os.getenv("MODEL_PATH", "your-huggingface-username/your-model-repo")
-
+MODEL_PATH = os.getenv("MODEL_PATH", "anjaly02/toxiscan-toxic-model")
 LABELS = [
     "toxic", "severe_toxic", "obscene",
     "threat", "insult", "identity_hate"
